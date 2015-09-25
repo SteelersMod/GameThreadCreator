@@ -1,0 +1,28 @@
+[DEFAULT]
+# Will be deprecated sometime in 2015 (probably)
+user =
+pswd =
+# Oauth should be used instead
+oauth_client_id = Replace this with client id assigned by reddit
+oauth_client_secret = Replace this with client secret assigned by reddit.  Follow guide here: http://tsenior.com/2014-01-23-authenticating-with-reddit-oauth/, but change scope to "scope=identity submit edit modposts modconfig save" if you want to be able to submit posts, and edit them with the bot.  The full list of scopes can be found here: http://praw.readthedocs.org/en/latest/pages/oauth.html#oauth-scopes
+oauth_redirect_uri = Redirect this where ever you want.  I chose the Steelers sub, since the bot was made for there
+oauth_refresh_token = Retrieved from reddit by following this guide: http://tsenior.com/2014-01-23-authenticating-with-reddit-oauth/ step 5 specifically
+oauth_access_token = Retrieved from reddit by following this guide: http://tsenior.com/2014-01-23-authenticating-with-reddit-oauth/ step 5 specifically
+log_requests = 0
+scope = "edit history identity modconfig modflair modposts read save submit"
+
+The actual praw ini you have will look something like this:
+
+[DEFAULT]
+# Will be deprecated sometime in 2015 (probably)
+user =
+pswd =
+# Oauth should be used instead
+oauth_client_id = 1dreg5erb6
+oauth_client_secret = tuye6545yhg5wse6
+oauth_redirect_uri = https://www.reddit.com/r/steelers
+oauth_refresh_token = gj5jk6g345g456w45hjg
+oauth_access_token = kje545h6l45h45ujh
+log_requests = 0
+scope = "edit history identity modconfig modflair modposts read save submit"
+
